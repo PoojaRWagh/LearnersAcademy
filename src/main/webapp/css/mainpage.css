@@ -1,0 +1,26 @@
+@charset "ISO-8859-1";
+
+.left {
+	background-color:#66cdaa;
+	float:left;
+	font-weight: 200;
+	margin: 0px;
+	padding: 10px;
+	height: 100%;
+	width: 5cm;
+	border: thick;
+	border-right-style: solid;
+}
+.top {
+	background-color:#66cdaa;
+	display: flex;
+	font-size: small;
+	border-bottom-style: double;
+	border-color: maroon;
+}
+.h1{
+text-decoration: blink;
+text-align: center;	
+color: maroon;
+text-align: center;
+}
