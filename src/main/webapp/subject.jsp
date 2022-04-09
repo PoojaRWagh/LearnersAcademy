@@ -12,11 +12,12 @@
 <body background="backgr.png">
 <jsp:include page="MainPage.jsp" />
 <table border="1">
+<caption>Subject List</caption>
 		<tr>
-		<td>Id</td>
-		<td>Subject Name</td>
-		<td>Time</td>
-		<td>Action</td>
+		<th>Id</th>
+		<th>Subject Name</th>
+		<th>Time</th>
+		<th>Action</th>
 		</tr>
 <%
 try{

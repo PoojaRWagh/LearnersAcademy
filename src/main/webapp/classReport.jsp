@@ -16,8 +16,8 @@
 			<tr>
 				<td>Student Name:</td>
 				<td>Subject Name:</td>
-				<td>Teacher Name:</td>
-				<td>Time:</td>	
+				<td>Time</td>
+				<td>Teacher Name</td>	
 			</tr>
 <%
 try{
@@ -27,15 +27,15 @@ try{
 	Statement st=conn.createStatement();
 	String sub=request.getParameter("subject");
 	System.out.println("subject="+sub);
-	String query="select student.fname,subject.subject,subject.time,teacher.fname from student right join subject on subject.subject='"+request.getParameter("subject")+"' right join teacher on student.subject='"+request.getParameter("subject")+"'";
+	String query="select student.fname,subject.subject,subject.time,teacher.tname from student,subject,teacher where subject.subject=teacher.subject and student.subject=subject.subject and subject.subject='"+request.getParameter("subject")+"'";
 	ResultSet rSet=st.executeQuery(query);
 	while(rSet.next())
 	{ %>
 		<tr>
 		<td><%=rSet.getString("fname") %></td>
 		<td><%=rSet.getString("subject") %></td>
-		<td><%=rSet.getString("fname") %></td>
 		<td><%=rSet.getString("time") %></td>
+		<td><%=rSet.getString("tname") %></td>
 		</tr>
 	<% }
 } catch (Exception e) {

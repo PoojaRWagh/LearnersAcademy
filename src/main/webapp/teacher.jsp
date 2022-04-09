@@ -12,13 +12,13 @@
 <body background="backgr.png">
 <jsp:include page="MainPage.jsp" />
 <table border="1">
+<caption>Teacher List</caption>
 		<tr>
-		<td>id</td>
-		<td>Name</td>
-		<td>Email</td>
-		<td>Subject</td>
-		<td>Action</td>
-	
+		<th>id</th>
+		<th>Name</th>
+		<th>Email</th>
+		<th>Subject</th>
+		<th>Action</th>
 		</tr>
 <%
 try{
@@ -35,7 +35,7 @@ try{
 		%>
 		<tr>
 		<td><%=rSet.getInt("id") %></td>
-		<td><%=rSet.getString("fname") %></td>
+		<td><%=rSet.getString("tname") %></td>
 		<td><%=rSet.getString("email") %></td>
 		<td><%=rSet.getString("subject") %></td>
 		<td><a href="delteacher.jsp?id=<%=id %>">Delete</a>

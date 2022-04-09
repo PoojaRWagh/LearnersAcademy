@@ -11,10 +11,9 @@ create sequence subject_seq
 	start with 1
 	increment by 1;
 //Class Report
-select student.fname,subject.subject,subject.time,teacher.fname 
-	from student right join subject on subject.subject='"+request.getParameter("subject")+"' 
-	right join teacher on student.subject='"+request.getParameter("subject")+"'"
-select * from student
+select student.fname,subject.subject,subject.time,teacher.tname from student,subject,teacher 
+	where subject.subject=teacher.subject and student.subject=subject.subject 
+	and subject.subject='"+request.getParameter("subject")+"'"
 select * from teacher
 select * from subject
 insert into student values(?,?,?,?)

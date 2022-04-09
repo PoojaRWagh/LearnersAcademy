@@ -12,6 +12,7 @@
 			<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Learner's Academy</h1>
 	</div>
 	<div class="left">
+	<h2>Menu</h2>
 	<form action="studentlist.jsp" method="post">
 	<input type="submit" name="student" value="STUDENT INFO"/><br><br>
 	</form>

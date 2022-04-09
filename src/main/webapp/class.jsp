@@ -13,9 +13,9 @@
 <jsp:include page="MainPage.jsp" />
 <div align="right" style="float:left;">
 <table border="1" >
-<caption>Available Subjects</caption>
+<h3>Available Subjects</h3>
 		<tr>
-		<td>Subject </td>
+		<th>Subject </th>
 		</tr>
 <%
 try{

@@ -15,12 +15,13 @@
 <body background="backgr.png">
 <jsp:include page="MainPage.jsp" />
 <table border="1">
+<caption>Student List</caption>
 		<tr>
-		<td>Id</td>
-		<td>Name</td>
-		<td>Email</td>
-		<td>Action</td>
-				<td> Subject</td>
+		<th>Id</th>
+		<th>Name</th>
+		<th>Email</th>
+		<th>Action</th>
+		<th> Subject</th>
 		</tr>
 <%
 try{

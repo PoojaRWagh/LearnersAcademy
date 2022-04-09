@@ -19,7 +19,7 @@ try{
 	String query="delete from teacher where id='"+id+"'";
 	ResultSet rSet=st.executeQuery(query);
 	%>
-	<script> alert("successful");</script>
+	<script type="text/javascript"> alert("successful");</script>
 	<%
 	response.sendRedirect("teacher.jsp");
 	} catch (Exception e) {
